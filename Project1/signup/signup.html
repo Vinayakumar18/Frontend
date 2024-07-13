@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SignUp</h1>
+      <div class="content">
+        <form
+          action=""
+          onsubmit="return validation()"
+          name="signup"
+          method="get"
+        >
+          <div class="user-details">
+            <div class="details">
+              <label for="firstname"> Firstname </label>
+              <input
+                class="user-input"
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="enter your firstname"
+                required
+              />
+            </div>
+            <div class="details">
+              <label for="lastname"> Lastname </label>
+              <input
+                class="user-input"
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="enter your lastname"
+                required
+              />
+            </div>
+            <div class="details">
+              <label for="username"> Username </label>
+              <input
+                class="user-input"
+                type="text"
+                name="username"
+                id="username"
+                placeholder="enter your username"
+                required
+              />
+            </div>
+            <div class="details">
+              <label for="email"> Email </label>
+              <input
+                class="user-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="enter your email"
+                required
+              />
+            </div>
+            <div class="details">
+              <label for="password"> Password </label>
+              <input
+                class="user-input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="enter your password"
+                required
+              />
+            </div>
+            <div class="details">
+              <label for="confirmpassword"> Confirm Password </label>
+              <input
+                class="user-input"
+                type="password"
+                name="confirmpassword"
+                id="confirmpassword"
+                placeholder="confirm your password"
+                required
+              />
+            </div>
+          </div>
+          <div class="error">
+            <p id="pwderror"></p>
+          </div>
+          <div class="gender-details">
+            <p>Gender:</p>
+            <label for="male">
+              <input type="radio" name="gender" id="male" />
+              Male
+            </label>
+            <label for="female">
+              <input type="radio" name="gender" id="female" />
+              Female
+            </label>
+            <label for="prefer-not-to-say">
+              <input type="radio" name="gender" id="prefer-not-to-say" />
+              prefer not to say
+            </label>
+          </div>
+          <div class="terms-condition">
+            <input
+              type="checkbox"
+              name="terms-condition"
+              id="terms-condition"
+              required
+            />
+            <p>
+              I Agree to all the <a href="#" id="terms">terms and conditions</a>
+            </p>
+          </div>
+          <button class="btn" type="submit">SignUp</button>
+          <div class="login-link">
+            <p>
+              Alredy have an account?
+              <a
+                href="file:///C:/Users/Vinay/Desktop/Frontend/Projects/Project1/login/login.html"
+                target="_blank"
+                >Login here</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

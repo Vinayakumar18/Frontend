@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(../Assets/signup.avif) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 600px;
+    background: transparent;
+    backdrop-filter: blur(9px);
+    border: 2px solid rgba(255,255,255,.3);
+    border-radius: 12px;
+    padding: 21px;
+    color: white;
+}
+
+.container h1{
+    font-size: 39px;
+    text-align: center;
+}
+
+.content form .user-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0px 3px 15px;
+}
+
+form .user-details .details{
+    margin-bottom: 9px;
+    width: 240px;
+}
+
+form .details label{
+    display: block;
+    font-weight: 600;
+    margin: 0 0 9px 9px;
+}
+
+.user-details .details input{
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.3);
+    border-radius: 15px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.808);
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 18px 45px 18px 18px;
+    transition: all 0.3s ease;
+}
+
+.user-details .details input:focus,
+.user-details .details input:active{
+    border-color: #e95c0b;
+}
+
+form .gender-details{
+    display: flex;
+    justify-content: space-around;
+    margin: 12px 3px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+form .terms-condition{
+    display: flex;
+    justify-content: start;
+    margin-left: 18px;
+}
+form .terms-condition p{
+    font-size: 15px;
+    margin-left: 6px;
+}
+
+form .btn{
+    width: 100%;
+    height: 39px;
+    margin-top: 12px;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.3);
+    border-radius: 100px;
+    color: white;
+    background: linear-gradient(120deg, #3ca6ec, #031a83);
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+form .btn:hover{
+    background: linear-gradient(120deg, #030f44, #4baef0);
+}
+
+.container .login-link{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin: 21px 0px 15px;
+}
+
+.login-link p a{
+    text-decoration: none;
+    color: white;
+}
+
+.login-link p a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+form .terms-condition #terms{
+    text-decoration: none;
+    color: white;
+}
+form .terms-condition #terms:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+form .error{
+    color: rgb(241, 10, 10);
+    font-weight: bolder;
+    font-style: oblique;
+    height: auto;
+    width: 100%;
+    margin: 3px 18px;
+}
